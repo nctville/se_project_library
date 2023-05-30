@@ -402,7 +402,6 @@
 
 .footer__columns {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer__column_content_hours {
