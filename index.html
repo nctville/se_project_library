@@ -22,19 +22,19 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" href="#">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" href="#">Events</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a class="nav__link" href="#">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a class="nav__link" href="#">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -58,7 +58,7 @@
         </div>
       </header>
       <main class="content">
-        <section class="events">
+        <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -139,10 +139,10 @@
           </div>
         </section>
 
-        <section class="staff">
+        <section class="staff" id="staff">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
-          <ul class="staff__card-content">
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -213,7 +213,7 @@
           </ul>
         </section>
 
-        <section class="membership">
+        <section class="membership" id="membership">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -269,7 +269,7 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -293,7 +293,7 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="footer__columns">
           <div class="footer__column">
             <img
@@ -303,14 +303,14 @@
             />
           </div>
           <div class="footer__column footer__column_content_hours">
-            <h2 class="footer__heading">Hours</h2>
+            <h2 class="footer__column-heading">Hours</h2>
             <ul class="footer__list">
               <li class="footer__list-item">Weekdays 9am - 8pm</li>
               <li class="footer__list-item">Weekends 10am - 6pm</li>
             </ul>
           </div>
           <div class="footer__column footer__column_content_social">
-            <h2>Social Media</h2>
+            <h2 class="footer__column-heading">Social Media</h2>
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a href="#" class="footer__column-link">
@@ -334,9 +334,7 @@
             </ul>
           </div>
         </div>
-        <p class="footer__column-cpoyrights">
-          &copy; 2023 Nicholas Turberville
-        </p>
+        <p class="footer__copywrite">&copy; 2023 Nicholas Turberville</p>
       </footer>
     </div>
   </body>
