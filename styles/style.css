@@ -25,7 +25,7 @@
   justify-content: space-between;
 }
 
-.nav__logo {
+.logo {
   width: 196px;
   height: 60px;
 }
@@ -258,14 +258,15 @@
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff__cards {
-  max-width: 768px;
-  padding-top: 68px;
+  max-width: 760px;
+  margin: 68px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px 40px;
   margin: auto;
-  padding-left: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .card {
